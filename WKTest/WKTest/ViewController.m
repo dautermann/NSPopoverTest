@@ -42,6 +42,12 @@
     [self.webView loadRequest:request];
 }
 
+- (void)viewDidAppear
+{
+    [super viewDidAppear];
+    [self.textField becomeFirstResponder];
+}
+
 - (NSTextField*) textField
 {
     if (!_textField)
