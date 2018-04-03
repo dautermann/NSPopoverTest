@@ -9,22 +9,9 @@
 
 @implementation NSWindow (PopoverKey)
 
-//- (BOOL) canBecomeKeyWindow
-//{
-//    if ([self class] == NSClassFromString(@"NSStatusBarWindow"))
-//    {
-//        NSPopover* mainPopover = ((AppDelegate*) NSApplication.sharedApplication.delegate).popover;
-//        if (![mainPopover isShown])
-//        {
-//            NSLog(@"R NO");
-//            return NO;
-//        }
-//    }
-//
-//    NSLog(@"R YES");
-//    return YES;
-//}
-
-
+- (BOOL) canBecomeKeyWindow
+{
+    return YES;
+}
 
 @end
